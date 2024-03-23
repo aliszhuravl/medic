@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=77dc28d4-690d-41be-8dc9-157768aa7e38&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Template</title>
+</head>
+<body>
+<div class="page-container page-main">
+    <header class="header">
+        <div class="header__inner">
+            <div class="burger">
+                <button class="hamburger" id="burger">
+                    <span></span>
+                </button>
+            </div>
+           <div class="header__inner_left">
+               <ul class="nav__list">
+                   <li><a href="#about" class="nav__link scroll__link">Обо мне</a></li>
+                   <li><a href="#serv" class="nav__link scroll__link">Услуги</a></li>
+                   <li><a href="#gallery" class="nav__link scroll__link">Галерея</a></li>
+                   <li><a href="#faq" class="nav__link scroll__link">FAQ</a></li>
+                   <li><a href="#feedback" class="nav__link scroll__link">Отзывы</a></li>
+               </ul>
+           </div>
+            <div class="header__inner_right">
+                <a href="tel:88612070727" class="link">8 (861) 207-07-27</a>
+                <a href="#" class="sublink">Перезвоните мне</a>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <div class="hero__block">
+            <div class="page__inner hero__block__inner">
+                <div class="hero__block__inner_main">
+                    <p class="h_upper">
+                        <img src="img/pin.svg" alt="">
+                        <span>Краснодар</span>
+                    </p>
+                    <h1><span>Соловьева <br></span> Екатерина Роландовна</h1>
+                    <p class="subheader">Врач-педиатр, аллерголог-иммунолог. Консультант по грудному вскармливанию.</p>
+                    <button class="btn">Записаться на консультацию</button>
+                </div>
+                <div class="hero__block__inner_sub">
+                    <p class="big_pink">>10 лет</p>
+                    <p class="sub_p">Опыт работы</p>
+                </div>
+                <div class="youtube_btn"><a href="#"><img src="img/yt.svg" alt=""></a></div>
+            </div>
+            <div class="btn_main mobile"><button class="btn">Записаться на консультацию</button></div>
+
+        </div>
+        <div class="page__inner">
+
+            <section class="page__item" id="serv">
+                <h2>Услуги</h2>
+                <div class="services_tile">
+                    <div class="services_tile__item">
+                        <div class="top"><p>Офлайн приём специалиста в клинике</p></div>
+                        <div class="item_body">
+                            <p class="item_body_descr">Хорошо бы добавить краткое описание услуги</p>
+                            <p class="price">2500 р.</p>
+                            <div class="btn_box"><button class="btn btn_white">Записаться на прием</button></div>
+                        </div>
+                    </div>
+                    <div class="services_tile__item">
+                        <div class="top"><p>Офлайн консультация по ГВ</p></div>
+                        <div class="item_body">
+                            <p class="item_body_descr">Хорошо бы добавить краткое описание услуги</p>
+                            <p class="price">3000 р.</p>
+                            <div class="btn_box"><button class="btn btn_white">Записаться на прием</button></div>
+                        </div>
+                    </div>
+                    <div class="services_tile__item">
+                        <div class="top"><p>Онлайн консультация по ГВ</p></div>
+                        <div class="item_body">
+                            <p class="item_body_descr">Хорошо бы добавить краткое описание услуги</p>
+                            <p class="price">2000 р.</p>
+                            <div class="btn_box"><button class="btn btn_white">Записаться на прием</button></div>
+                        </div>
+                    </div>
+                    <div class="services_tile__item">
+                        <div class="top"><p>Консультация по ГВ с выездом на дом</p></div>
+                        <div class="item_body">
+                            <p class="item_body_descr">Хорошо бы добавить краткое описание услуги</p>
+                            <p class="price">от 3500 р.</p>
+                            <div class="btn_box"><button class="btn btn_white">Записаться на прием</button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="wide-screen">
+            <div class="page__inner meet-block">
+                <section class="page__item photo-block">
+                    <div class="left">
+                        <h2>Давайте познакомимся</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        <button class="btn btn_img"><img src="img/wh.svg" alt="">Написать мне в WhatsApp</button>
+                    </div>
+                </section>
+            </div>
+            <div class="photo_box"></div>
+        </div>
+
+        <div class="wide-screen map">
+            <div class="map_box" id="map"></div>
+            <div class="page__inner">
+                <section class="page__item">
+                    <div class="map_top">
+                        <div class="map_top__inner">
+                            <img src="img/logo.svg" alt="">
+                            <p>Краснодар, Kids' Med Чекистов, 15/1</p>
+                        </div>
+                    </div>
+                    <div class="map_bottom">
+                        <a href="#"><img src="img/inst.svg" alt=""></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="about" class="page__inner about_item">
+            <section class="page__item">
+                <h2>Обо мне</h2>
+                <div class="about">
+                    <div class="accordion">
+                        <ul class="accordion__list">
+                            <li class="accordion__item accordion__item_open">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Опыт работы</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <div class="info_row">
+                                        <div class="dates"><p>02.02.2015 — 31.08.2015</p></div>
+                                        <div class="info">
+                                            <p>ООО Медицинский центр «Континент»</p>
+                                            <p>Врач-педиатр</p>
+                                        </div>
+                                    </div>
+                                    <div class="info_row">
+                                        <div class="dates"><p>02.02.2015 — 31.03.2020</p></div>
+                                        <div class="info">
+                                            <p>ООО «Планета Детства»</p>
+                                            <p>Врач-педиатр, врач-аллерголог, главный врач, генеральный директор</p>
+                                        </div>
+                                    </div>
+                                    <div class="info_row">
+                                        <div class="dates"><p>01.04.2020 — сейчас</p></div>
+                                        <div class="info">
+                                            <p>ООО Детский центр здоровья «Кидс МЕД»</p>
+                                            <p>Врач-педиатр, врач аллерголог-иммунолог</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion__item accordion__item_open">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Образование</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <div class="info_row education">
+                                        <p>В 2013 году окончила Кубанский государственный медицинский университет по специальности «Педиатрия»</p>
+                                    </div>
+                                    <div class="info_row education">
+                                        <p>Окончила интернатуру по специальности «Педиатрия» в «Санкт-Петербургском Государственном педиатрическом университете»</p>
+                                    </div>
+                                    <div class="info_row education">
+                                        <p>Получила диплом по специальности «Аллергология и иммуналогия» в «Санкт-Петербургском Государственном педиатрическом университете».</p>
+                                    </div>
+                                    <div class="info_row education">
+                                        <p>Прошла курс профессиональной переподготовки по специальности «Организация здравоохраниния и общественное здоровье» на базе ЧОУ ДПО «Санкт-Петербургский институт последипломного образования»</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Повышение квалификации</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <div class="info_row education">
+                                        <p>В 2013 году окончила Кубанский государственный медицинский университет по специальности «Педиатрия»</p>
+                                    </div>
+                                    <div class="info_row education">
+                                        <p>Окончила интернатуру по специальности «Педиатрия» в «Санкт-Петербургском Государственном педиатрическом университете»</p>
+                                    </div>
+                                    <div class="info_row education">
+                                        <p>Получила диплом по специальности «Аллергология и иммуналогия» в «Санкт-Петербургском Государственном педиатрическом университете».</p>
+                                    </div>
+                                    <div class="info_row education">
+                                        <p>Прошла курс профессиональной переподготовки по специальности «Организация здравоохраниния и общественное здоровье» на базе ЧОУ ДПО «Санкт-Петербургский институт последипломного образования»</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="docs" href="#">Дипломы и сертификаты</a>
+            </section>
+        </div>
+
+        <div class="wide-screen gray-rounded">
+            <div class="page__inner">
+                <section class="page__item tags">
+                    <h2>С чем я могу помочь</h2>
+                    <div class="tags__outter">
+                        <h3>В качестве врача-педиатра:</h3>
+                        <div class="tags__box">
+                            <div class="tags__box_item">
+                                <p>Ведение детей от рождения</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Вскармливание детей с рождения</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Инфекционные заболевания</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Заболевания дыхательных путей</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Заболевания ЛОР-органов</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Инфекции мочевыводящих путей</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Функциональное нарушение желудочно-кишечного тракта</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Длительные лихорадки неясного генеза</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Профилактические осмотры детям с рождения до 18 лет</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Осмотр детей перед плановой вакцинацией</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tags__outter">
+                        <h3>В качестве врача аллеоголога-иммунолога:</h3>
+                        <div class="tags__box">
+                            <div class="tags__box_item">
+                                <p>Помощь при непереносимости грудного молока</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Атипический дерматит</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Бронхиальная астма</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Аллергические риниты</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Поллиноз</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Составление индивидуального план вакцинации</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tags__outter">
+                        <h3>В качестве специалиста по грудному вскармливанию:</h3>
+                        <div class="tags__box">
+                            <div class="tags__box_item">
+                                <p>Как правильно приложить ребенка к груди</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Боль при кормлении, трещины, жжение в сосках</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Нехватка молока</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Избыток молока</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Нагрубание молочных желез</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Лактостаз</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Мастит</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Плоские, вытянутые соски</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Ребенок плохо прибавляет в весе</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Как создать банк грудного молока</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Сцеживание грудного молока</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Релактация (возобновление кормления после перерыва)</p>
+                            </div>
+                            <div class="tags__box_item">
+                                <p>Отлучение от груди</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="slider">
+                <div class="slider__inner slider_main">
+                    <div class="slide">
+                        <img class="slide_content"  src="img/vid.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide_content" src="img/vid.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide_content" src="img/vid.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide_content" src="img/vid.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page__inner">
+                <section class="page__item faq_block" id="faq">
+                    <h2>Часто задаваемые вопросы</h2>
+                    <div class="accordion faq">
+                        <ul class="accordion__list">
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Текст задаваемого вопроса?</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <p>Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Текст задаваемого вопроса?</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <p>Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Текст задаваемого вопроса?</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <p>Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <div class="accordion__btn">
+                                    <p class="accordion__text">Текст задаваемого вопроса?</p>
+                                </div>
+                                <div class="accordion__content">
+                                    <p>Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="wide-screen pink_block">
+            <div class="page__inner meet-block">
+                <section class="page__item photo-block">
+                    <div class="left">
+                        <h2>Авторская методичка по ГВ в подарок</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        <button class="btn btn_img btn_white"><img src="img/gift.svg" alt="">Скачать методичку</button>
+                    </div>
+                </section>
+            </div>
+            <div class="photo_box gv_box"></div>
+        </div>
+
+        <div id="gallery" class="wide-screen gallery">
+            <div class="page__inner gallery_title">
+                <section class="page__item">
+                    <h2>Фотогалерея</h2>
+                </section>
+            </div>
+            <div class="slider">
+                <div class="slider__inner slider_main">
+                    <div class="slide">
+                        <img class="slide_content" src="img/01.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide_content" src="img/02.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide_content" src="img/03.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="slide_content" src="img/02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wide-screen gray-block">
+            <div class="page__inner">
+                <div class="page__inner">
+                    <section class="page__item" id="feedback">
+                        <h2>Отзывы клиентов</h2>
+                        <div class="feed_slider">
+                            <div class="feed_slider__inner fs_slider">
+                                <div class="fs_slide">
+                                    <div class="fs_slide__inner">
+                                        <div class="logo"><img src="img/ya.svg" alt=""></div>
+                                        <p class="feed_text">Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                        <div class="author">
+                                            <div class="avatar"><img src="img/ava.png" alt=""></div>
+                                            <div class="name">
+                                                <p>Екатерина К.</p>
+                                                <p>15 февраля 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fs_slide">
+                                    <div class="fs_slide__inner">
+                                        <div class="logo"><img src="img/ya.svg" alt=""></div>
+                                        <p class="feed_text">Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                        <div class="author">
+                                            <div class="avatar"><img src="img/ava.png" alt=""></div>
+                                            <div class="name">
+                                                <p>Екатерина К.</p>
+                                                <p>15 февраля 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fs_slide">
+                                    <div class="fs_slide__inner">
+                                        <div class="logo"><img src="img/ya.svg" alt=""></div>
+                                        <p class="feed_text">Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                        <div class="author">
+                                            <div class="avatar"><img src="img/ava.png" alt=""></div>
+                                            <div class="name">
+                                                <p>Екатерина К.</p>
+                                                <p>15 февраля 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fs_slide">
+                                    <div class="fs_slide__inner">
+                                        <div class="logo"><img src="img/ya.svg" alt=""></div>
+                                        <p class="feed_text">Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                        <div class="author">
+                                            <div class="avatar"><img src="img/ava.png" alt=""></div>
+                                            <div class="name">
+                                                <p>Екатерина К.</p>
+                                                <p>15 февраля 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fs_slide">
+                                    <div class="fs_slide__inner">
+                                        <div class="logo"><img src="img/ya.svg" alt=""></div>
+                                        <p class="feed_text">Внимательный персонал. Посещали педиатра Екатерину Роландоану. Врач понравилась, внимательно смотрела ребенка, дала хорошие рекомендации. Мы быстро выздоровела. Медцентром довольна.</p>
+                                        <div class="author">
+                                            <div class="avatar"><img src="img/ava.png" alt=""></div>
+                                            <div class="name">
+                                                <p>Екатерина К.</p>
+                                                <p>15 февраля 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__inner_item">
+                <ul class="footer_menu">
+                    <li><a href="#about" class="fm__link scroll__link">Обо мне</a></li>
+                    <li><a href="#serv" class="fm__link scroll__link">Услуги</a></li>
+                    <li><a href="#gallery" class="fm__link scroll__link">Галерея</a></li>
+                    <li><a href="#faq" class="fm__link scroll__link">FAQ</a></li>
+                    <li><a href="#feedback" class="fm__link scroll__link">Отзывы</a></li>
+                </ul>
+            </div>
+            <div class="footer__inner_item">
+                <div class="address">
+                    <img src="img/pin.svg" alt="">
+                    <div class="adr_text">
+                        <p>Краснодар, Kids' Med Чекистов, 15/1</p>
+                        <p>Адрес клиники</p>
+                    </div>
+                </div>
+                <button class="btn">Записаться на прием</button>
+            </div>
+            <div class="footer__inner_item">
+                <div class="phone">
+                    <a href="tel:88612070727" class="link">8 (861) 207-07-27</a>
+                    <a href="#" class="sublink">Перезвоните мне</a>
+                </div>
+            </div>
+            <div class="footer__inner_item">
+                <img src="img/footer_logo.svg" alt="">
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© 2024 Название организации</p>
+        </div>
+    </footer>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+                <div class="menu_body">
+                    <div class="menu_body__inner">
+                        <ul class="menu_body__inner_list">
+                            <li>
+                                <a href="#about" class="link">Обо мне</a>
+                            </li>
+                            <li>
+                                <a href="#serv" class="link">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#gallery" class="link">Галерея</a>
+                            </li>
+                            <li>
+                                <a href="#faq" class="link">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#feedback" class="link">Отзывы</a>
+                            </li>
+                        </ul>
+                        <div class="menu_body__inner_bottom">
+                            <a href="tel:88612070727" class="link">8 (861) 207-07-27</a>
+                            <a href="#" class="sublink">Перезвоните мне</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+                center: [45.030819, 38.910686],
+                zoom: 14
+            }),
+
+
+
+            // Создаем метку с помощью вспомогательного класса.
+            myPlacemark1 = new ymaps.Placemark([45.030819, 38.910686], {
+                // Свойства.
+                // Содержимое иконки, балуна и хинта.
+                iconContent: '1',
+                hintContent: 'KIDS MED'
+            }, {
+                iconLayout: 'default#image',
+                balloonContent: 'KIDS MED',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/pin2.png',
+                // Размеры метки.
+                iconImageSize: [42, 42],
+                preset: 'twirl#violetIcon'
+            });
+
+        //myMap.controls.add('smallZoomControl');
+        // Добавляем все метки на карту.
+        myMap.geoObjects.add(myPlacemark1)
+            .add(myGeoObject);
+    }
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

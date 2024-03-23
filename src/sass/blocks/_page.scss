@@ -1,0 +1,44 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 375px;
+  width: 100%;
+  min-height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__item {
+  @extend .layout-padding;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 54px;
+  line-height: 60px;
+  font-family: $font-family_bold;
+  max-width: 720px;
+}
+
+h2 {
+  font-size: 54px;
+  line-height: 58px;
+  font-family: $font-family_bold;
+  padding-left: 60px;
+  margin-bottom: 40px;
+}

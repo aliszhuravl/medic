@@ -28,7 +28,7 @@
            </div>
             <div class="header__inner_right">
                 <a href="tel:88612070727" class="link">8 (861) 207-07-27</a>
-                <a href="#" class="sublink">Перезвоните мне</a>
+                <a href="#" class="sublink pop_open">Перезвоните мне</a>
             </div>
         </div>
     </header>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="youtube_btn"><a href="#"><img src="img/yt.svg" alt=""></a></div>
             </div>
-            <div class="btn_main mobile"><button class="btn">Записаться на консультацию</button></div>
+            <div class="btn_main mobile"><button class="btn" id="pop_open">Записаться на консультацию</button></div>
 
         </div>
         <div class="page__inner">
@@ -490,7 +490,6 @@
                 </div>
             </div>
         </div>
-
     </main>
     <footer class="footer">
         <div class="footer__inner">
@@ -516,7 +515,7 @@
             <div class="footer__inner_item">
                 <div class="phone">
                     <a href="tel:88612070727" class="link">8 (861) 207-07-27</a>
-                    <a href="#" class="sublink">Перезвоните мне</a>
+                    <a href="#" class="sublink" id="pop_open">Перезвоните мне</a>
                 </div>
             </div>
             <div class="footer__inner_item">
@@ -554,6 +553,19 @@
                             <a href="#" class="sublink">Перезвоните мне</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup_wrapper">
+        <div class="popup" id="modal">
+            <div class="close"><img src="img/close.svg" alt="x"></div>
+            <div class="popup_body">
+                <div class="popup_body__inner">
+                    <h2>Заказать звонок</h2>
+                    <p>Оставьте свой номер, и я перезвоню вам через 5 минут</p>
+                    <input type="tel" class="form__item" placeholder="Ваш телефон">
+                    <button class="btn">Заказать звонок</button>
                 </div>
             </div>
         </div>

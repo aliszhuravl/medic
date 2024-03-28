@@ -660,4 +660,19 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .popup {
+    width: 90%;
+    padding: 20px;
+      h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+      .form__item {
+        width: 100%;
+      }
+      .btn {
+        width: 100%;
+      }
+  }
 }
